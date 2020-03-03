@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+html, body {
+  width: 100%;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+  padding: 8px 0px;
+  font-family: "Raleway";
+}
+
+nav img {
+  width: 50px;
+}
+
+#page {
+  background-color: #461220;
+  color: #fed0bb;
+  width: 100%;
+  padding: 0px;
+}
+
+#subpage {
+  width: 100%;
+  padding: 0px;
+}
+
+/* Cover image and text */
+#cover {
+  height: 600px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-image: url("pics/_DSC8407B.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+#insidetext {
+    padding: 270px 0px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+#insidetext h1 {
+    font-family: "Raleway";
+    font-size: 11vw;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#insidetext h2 {
+  font-family: "Petit Formal Script";
+  font-size: 7vw;
+}
+
+@media screen and (min-width: 767px) {
+  #cover {
+    height: 1000px;
+  }
+
+  #insidetext {
+    padding: 400px 0px;
+  }
+}
+
+/* Welcome Text and Decoration */
+#intro {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+#sidebrace1, #sidebrace2 {
+  display: none;
+}
+
+#celebrate h1 {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 7vw;
+}
+
+#celebrate blockquote {
+  font-family: "Raleway";
+  font-size: 5vw;
+}
+
+@media screen and (min-width: 767px) {
+  #intro {
+    margin: 200px 0px;
+  }
+
+  #sidebrace1, #sidebrace2 {
+    display: flex;
+  }
+
+  #celebrate h1 {
+    font-size: 5vw;
+  }
+
+  #celebrate blockquote {
+    font-size: 3vw;
+  }
+}
+
+/* Ceremony and Reception */
+#details {
+  background-color: white;
+  color: black;
+  padding: 50px 0px;
+  margin: 50px 0px;
+	text-align: center;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+.bold {
+  color: black;
+}
+
+#whenandwhere {
+  margin: 25px 0px;
+}
+
+#when {
+  margin: 10px 0px;
+}
+
+#details h1 {
+	margin-bottom: 20px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 7vw;
+}
+
+#details h2 {
+  font-size: 5vw;
+  font-family: "Raleway";
+  font-weight: 600;
+}
+
+#details h3 {
+  font-size: 4vw;
+  font-family: "Raleway";
+}
+
+#details h4 {
+  font-size: 4vw;
+  font-family: "Raleway";
+}
+
+@media screen and (min-width: 767px) {
+  #details {
+    padding: 50px 0px 100px;
+  }
+
+  #when {
+    margin: 0px 0px 25px;
+  }
+
+  #where {
+    margin: 0px 0px 25px;
+  }
+
+  #details h1 {
+  	margin-bottom: 50px;
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 5vw;
+  }
+
+  #details h2 {
+    font-size: 3vw;
+    font-family: "Raleway";
+    font-weight: 600;
+  }
+
+  #details h3 {
+    font-size: 2.5vw;
+    font-family: "Raleway";
+  }
+
+  #details h4 {
+    font-size: 2vw;
+    font-family: "Raleway";
+  }
+}
+
+/* Registry */
+#registry {
+  width: 100%;
+  margin: 0px 0px;
+  padding: 0px 0px 25px;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+#registry h1 {
+  font-family: "Raleway";
+  font-size: 9vw;
+}
+
+#registry img {
+  margin-top: 25px;
+  border-radius: 15px;
+  background-color: white;
+  width: 65%;
+}
+
+@media screen and (min-width: 767px) {
+  #registry h1 {
+    font-family: "Raleway";
+    font-size: 5vw;
+  }
+
+  #registry img {
+    margin-top: 25px;
+    border-radius: 15px;
+    background-color: white;
+    width: 40%;
+  }
+}
+
+/* Gallery images */
+#gallery {
+  margin: 50px 0px;
+  padding: 20px 20px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+#gallery img {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  width: 100%;
+  margin: 10px 0px 0px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+#gallery div {
+  padding: 0px 5px;
+}
+
+/* RSVP box */
+#rsvp-box {
+  padding: 20px 0px 0px 0px;
+  color: black;
+	margin: 0px auto 30px auto;
+	text-align: center;
+	align-content: center;
+	background-color: #FFF;
+	border-radius: 15px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, .25);
+}
+
+#info h1 {
+    color: black;
+    font-size: 9vw;
+    font-family: "Raleway";
+}
+
+#info h2 {
+    color: black;
+    font-size: 7vw;
+    font-family: "Great Vibes";
+}
+
+#info p {
+	color: black;
+  font-size: 4vw;
+  font-family: "Raleway";
+}
+
+p.line {
+  margin: 0px auto 20px auto;
+}
+
+input:focus {
+  outline: 0;
+}
+
+#password {
+  display: block;
+  margin: 0px auto 10px;
+  border: grey solid 0.3px;
+  padding: 5px;
+  width: 75%;
+  font-family: "Raleway";
+}
+
+
+#name {
+  display: block;
+  margin: 0px auto 10px;
+  border: grey solid 0.3px;
+  padding: 5px;
+  width: 75%;
+  font-family: "Raleway";
+}
+
+#numguests {
+  display: block;
+  margin: 0px auto 10px;
+  border: grey solid 0.3px;
+  padding: 5px;
+  width: 75%;
+  font-family: "Raleway";
+}
+
+#attending-div {
+  width: 75%;
+  margin: 0px auto 10px;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.radio-button {
+  margin: 0px 5px;
+}
+
+#is-attending {
+  display: inline-block;
+  padding: 10px;
+  font-family: "Raleway";
+}
+
+#not-attending {
+  display: inline-block;
+  padding: 10px;
+  font-family: "Raleway";
+}
+
+#message {
+  display: block;
+  margin: 0px auto 10px;
+  border: grey solid 0.5px;
+  padding: 5px;
+  width: 75%;
+  font-family: "Raleway";
+}
+
+#form-display {
+  width: 80%;
+  margin: 10px 0px;
+  font-family: "Raleway";
+}
+
+#rsvp-submit {
+  display: block;
+  margin: 0px auto 10px;
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 80%;
+  background-color: #123456;
+  color: white;
+  font-family: "Raleway";
+}
+
+@media screen and (min-width: 767px) {
+  #rsvp-area {
+    width: 60%;
+    margin: auto;
+  }
+
+  #info h1 {
+      font-size: 5vw;
+  }
+
+  #info h2 {
+      font-size: 3vw;
+  }
+
+  #info p {
+    font-size: 2vw;
+  }
+
+  #attending-div {
+    font-size: 2vw;
+  }
+}
