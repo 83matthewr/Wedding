@@ -347,6 +347,7 @@ input:focus {
   width: 80%;
   margin: 10px 0px;
   font-family: "Raleway";
+  text-align: center;
 }
 
 #rsvp-submit {

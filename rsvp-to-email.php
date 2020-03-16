@@ -1,21 +1,17 @@
 <?php
 
-  function filter($form_field) {
-     return preg_replace('/[\0\n\r\|\!\/\<\>\^\$\%\*\&]+/','',$form_field);
-  }
-
-  function isGuest($password) {
-    if ($password == '5926') {
+  function isGuest($pw) {
+    if ($pw == '5926') {
       return True;
     }
     return False;
   }
 
-  $password = filter($_POST['password']);
-  $name = filter($_POST['name']);
+  $password = $_POST['password'];
+  $name = urldecode($_POST['name']);
   $attending = $_POST['attending'];
-  $numguests = filter($_POST['numguests']);
-  $message = filter($_POST['message']);
+  $numguests = $_POST['numguests'];
+  $message = $_POST['message'];
 
   $email_from = "mail.matthewandrahel.com";
   $email_subject = "$name: $numguests guests";
@@ -24,12 +20,18 @@
   $to = "matthewandrahel@gmail.com";
   $headers = "From: $email_from \r\n";
 
-  if (isGuest($password)) {
-    $sent = mail($to,$email_subject,$email_body,$headers);
-    echo "Thank you for RSVPing!";
+  if (!isGuest($password)) {
+    $sent = False;
+    echo "The registration password you entered is incorrect";
   }
   else {
-    $sent = False;
-    echo "Ooops, something went wrong :/";
+    $sent = mail($to,$email_subject,$email_body,$headers);
+  }
+
+  if ($sent) {
+    echo "Thank you for RSVPing! We'll see you there!";
+  }
+  else {
+    echo "There was an issue with your submission. Please try again!";
   }
 ?>
